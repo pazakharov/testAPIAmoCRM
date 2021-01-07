@@ -8,7 +8,7 @@ API: https://developers.amocrm.ru/rest_api/
 Установка: 
 * Клонировать репозиторий или скачать файлы
 ```
-git clone
+git clone https://github.com/pazakharov/testAPIAmoCRM.git
 ```
 * В директории с проектом установить зависимости:
 ```
