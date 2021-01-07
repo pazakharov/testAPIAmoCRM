@@ -23,7 +23,6 @@ include_once __DIR__ . '/bootstrap.php';
  */
 function fetchAllEntities($collection, $service, $filter, $with, $next = FALSE)
 {
-	sleep(1);
 	if ($next == TRUE) {
 		try {
 			$fetchedCollection = $service->nextPage($collection);
@@ -72,8 +71,7 @@ $apiClient->setAccessToken($accessToken)
 
 $contactsService = $apiClient->contacts();
 $contactsFilter = new ContactsFilter();
-//$contactsFilter->setLimit(API_PER_PAGE_LIMIT);
-$contactsFilter->setLimit(2);
+$contactsFilter->setLimit(API_PER_PAGE_LIMIT);
 
 $tasksService = $apiClient->tasks();
 $tasksCollection = new TasksCollection();
